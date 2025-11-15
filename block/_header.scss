@@ -1,0 +1,76 @@
+.header {
+  background: #0fbd34;
+  color: #fff;
+  padding: 15px 20px;
+  width: 1200px;
+  margin: 0 auto;
+
+  &__wrapper {
+    width: 100%;
+    background: #0fbd34;
+  }
+
+  &__logo {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  &__nav {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+
+    & .header__link {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    padding: 10px;
+
+    &__nav {
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    &__link {
+      margin-bottom: 5px;
+    }
+  }
+
+  .main {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .main {
+    padding: 10px;
+  }
+
+  .profile__form__buttons {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/normaliza.css" />
+    <link rel="icon" type="image/png" href="./Img/image.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header__wrapper">
+      <div class="header">
+        <div class="header__logo">MyDashboard</div>
+        <nav class="header__nav">
+          <a class="header__link" href="#">Home</a>
+          <a class="header__link" href="./Pages/About.html">About</a>
+          <a class="header__link" href="./Pages/Contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main__wrapper">
+      <div class="main">
+        <section class="profile__form card">
+          <h2 class="profile__form__title">Create Profile</h2>
+
+          <div class="profile__form__group">
+            <label class="profile__form__label">Ism</label>
+            <input
+              type="text"
+              class="profile__form__input profile__form__input__fullName"
+              required
+
+            />
+          </div>
+
+          <div class="profile__form__group">
+            <label class="profile__form__label">Yosh</label>
+            <input
+              type="number"
+              class="profile__form__input profile__form__input__age"
+              required
+
+            />
+          </div>
+
+          <div class="profile__form__group">
+            <label class="profile__form__label">Email</label>
+            <input
+              type="text"
+              class="profile__form__input profile__form__input__email"
+              required
+
+            />
+          </div>
+
+          <div class="profile__form__group">
+            <label class="profile__form__label">Hobby</label>
+            <input
+              type="text"
+              class="profile__form__input profile__form__input__hobby"
+              required
+
+            />
+          </div>
+
+          <div class="profile__form__group">
+            <label class="profile__form__label">Tug‘ilgan yil</label>
+            <input
+              type="number"
+              class="profile__form__input profile__form__input__birthYear"
+              required
+            />
+          </div>
+
+          <div class="profile__form__buttons">
+            <button class="btn btn__save" id="saveBtn">Save </button>
+            <button class="btn btn__clear" id="clearBtn">Clear</button>
+          </div>
+        </section>
+
+        <section class="profile__result card" id="resultBox">
+          <h2 class="profile__result__title">Information</h2>
+          <div class="profile__result__content" id="resultContent">
+            empty . . . . . .
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer__wrapper">
+      <div class="footer"><span id="year"></span> My Dashboard</div>
+    </footer>
+
+    <script src="index.js"></script>
+    <noscript>Java script disabled! </noscript>
+  </body>
+</html>
