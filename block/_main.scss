@@ -89,3 +89,26 @@
     color: #333;
   }
 }
+
+.form__group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.form__group {
+  margin-bottom: 16px;
+  width: 90%;
+}
+
+@media (max-width: 375px) {
+  .main {
+    padding: 10px;
+    width: 100% !important;
+    flex-direction: column;
+  }
+
+  .profile__form__buttons {
+    flex-direction: column;
+  }
+}

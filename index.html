@@ -31,32 +31,31 @@
           <h2 class="profile__form__title">Create Profile</h2>
 
           <div class="profile__form__group">
-            <label class="profile__form__label">Ism</label>
+            <label class="profile__form__label">To‘liq ism</label>
             <input
               type="text"
               class="profile__form__input profile__form__input__fullName"
               required
-
             />
           </div>
 
           <div class="profile__form__group">
-            <label class="profile__form__label">Yosh</label>
+            <label class="profile__form__label">Tug‘ilgan yil</label>
             <input
               type="number"
-              class="profile__form__input profile__form__input__age"
+              min="1900"
+              max="2025"
+              class="profile__form__input profile__form__input__birthYear"
               required
-
             />
           </div>
 
           <div class="profile__form__group">
             <label class="profile__form__label">Email</label>
             <input
-              type="text"
+              type="email"
               class="profile__form__input profile__form__input__email"
               required
-
             />
           </div>
 
@@ -66,21 +65,21 @@
               type="text"
               class="profile__form__input profile__form__input__hobby"
               required
-
             />
           </div>
 
           <div class="profile__form__group">
-            <label class="profile__form__label">Tug‘ilgan yil</label>
-            <input
-              type="number"
-              class="profile__form__input profile__form__input__birthYear"
-              required
-            />
+            <label>Jins</label>
+            <select id="gender" required>
+              <option value="">Tanlang</option>
+              <option value="male">Erkak</option>
+              <option value="female">Ayol</option>
+              <option value="other">Boshqa</option>
+            </select>
           </div>
 
           <div class="profile__form__buttons">
-            <button class="btn btn__save" id="saveBtn">Save </button>
+            <button class="btn btn__save" id="saveBtn">Save</button>
             <button class="btn btn__clear" id="clearBtn">Clear</button>
           </div>
         </section>
@@ -88,17 +87,16 @@
         <section class="profile__result card" id="resultBox">
           <h2 class="profile__result__title">Information</h2>
           <div class="profile__result__content" id="resultContent">
-            empty . . . . . .
+            Empty . . . . .
           </div>
         </section>
       </div>
     </main>
-
     <footer class="footer__wrapper">
       <div class="footer"><span id="year"></span> My Dashboard</div>
     </footer>
 
     <script src="index.js"></script>
-    <noscript>Java script disabled! </noscript>
+    <noscript>Java script is disabled! </noscript>
   </body>
 </html>
